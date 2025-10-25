@@ -60,7 +60,7 @@ class Lista:
         return None
     
     def imprimir(self):
-        p = self.__topo
+        p = self.__inicio
         print('Lista:',end=' ')
         if self.vazia():
             print('vazia')
