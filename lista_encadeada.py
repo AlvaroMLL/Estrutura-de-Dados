@@ -38,7 +38,7 @@ class Lista:
         return p.dado
     
     def posicao(self, item):
-        if self.vazia:
+        if self.vazia():
             return None
         n = 1
         p = self.__inicio
@@ -60,7 +60,7 @@ class Lista:
         return None
 
     def imprimir(self):
-        p = self.__topo
+        p = self.__inicio
         print('Lista:',end=' ')
         if self.vazia():
             print('vazia')
@@ -105,7 +105,7 @@ class Lista:
         if self.__inicio.prox == None:
             self.__inicio = None
         else:
-            a.prox == None
+            a.prox = None
         return item
 
 #programa_principal
